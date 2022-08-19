@@ -685,6 +685,11 @@ def run(**kwargs):
     return opt
 
 
+def entrypoint():
+    opt = parse_opt()
+    main(opt)
+
+
 if __name__ == "__main__":
     opt = parse_opt()
     main(opt)
